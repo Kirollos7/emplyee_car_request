@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "employee_car_request",
+    'name': "Employee Car Request",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        
+        Small description""",
 
     'description': """
         Long description of module's purpose
@@ -16,15 +16,17 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/12.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'Human Resources',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','hr','fleet', ],
 
+  #  'application':'True',
+    
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        #'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],
